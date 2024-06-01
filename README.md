@@ -34,7 +34,7 @@ from IPython.display import Audio
 chat = ChatTTS.Chat()
 chat.load_models(compile=False) # Set to True for better performance
 
-texts = ["PUT YOUR TEXT HERE",]
+texts = ["Hi",]
 
 wavs = chat.infer(texts, )
 
@@ -79,7 +79,7 @@ torchaudio.save("output2.wav", torch.from_numpy(wavs[0]), 24000)
 
 ```python
 inputs_en = """
-chat T T S is a text to speech model designed for dialogue applications. 
+chat T T S is a text to speech model not designed for dialogue applications. 
 [uv_break]it supports mixed language input [uv_break]and offers multi speaker 
 capabilities with precise control over prosodic elements [laugh]like like 
 [uv_break]laughter[laugh], [uv_break]pauses, [uv_break]and intonation. 
